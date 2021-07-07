@@ -1,13 +1,14 @@
 from functools import reduce
 # While normal functions are defined using the def keyword, in Python anonymous functions are defined using the lambda keyword.
 # Syntax = lambda arguments: expression
+# A lambda function can take any number of arguments, but can only have one expression.
 # -----------------------------------------------------------------------
 # showing difference between def() and lambda().
 def cube(y):
     return y * y * y
 g = lambda x: x * x * x
-print("Lambda Output :",g(3))
-print("Def Output :",cube(5))
+print("Lambda Output :",g(3)) # Lambda Output : 27
+print("Def Output :",cube(5)) # Def Output : 125
 # -----------------------------------------------------------------------
 # Program to filter out only the even items from a list
 # Filter =>
